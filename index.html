@@ -5,43 +5,194 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div style="width: 100%; height: 100%; position: relative; background: #4B566F; overflow: hidden">
+<body style="min-height: 100%">
+    <div style="background: #4B566F; display: flex; justify-content: space-between; padding: 0 45px;">
 
-        <div style="width: 407px; height: 715px; left: 45px; top: 56px; position: absolute; background: #BFCBE0; border-radius: 90px"></div>
-        <div style="width: 407px; height: 281px; left: 45px; top: 818px; position: absolute; background: #BFCBE0; border-radius: 90px"></div>
+        <!-- Left Side-->
+        <div style="display: flex; flex-direction: column; width: 50%;"> 
+            <!-- Bio Box -->
+            <div class = "leftbox" style="margin-top: 4%;">
+
+                <div class = "title">Hannah Nguyen</div>
+
+                <div style="width: 100%; height: 0px; margin-top: 20px; position: relative; outline: 4px black solid; outline-offset: -2px"></div>
+
+
+                <div style="width: 75%; height: 200px; margin-top: 20px; background: #D9D9D9"></div>
+
+                <div class = "projectbox">
+                    <div class = "bio" style="width: 100%;">
+                        Hi! I’m a junior at UCSB double majoring in Statistics and Data Science, as well as Applied Math. 
+                        My interests lie in machine learning, use of AI, and app development. 
+                        I hope to apply my knowledge from my statistics and math courses towards more real world applications.
+
+                        Outside of school, I enjoy listening to music and drawing.
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Links Box -->
+            <div class = "leftbox" style="margin-top: 2%;">
+                
+                <div class = "projectbox">
+
+                    <div class = "title">Links</div>
+                    <div style="width: 100%; height: 0px; margin-top: 5%; margin-bottom: 5%; position: relative; outline: 4px black solid; outline-offset: -2px"></div>
+                    <a class = "bio link" href="https://github.com/hnguyennn" style="margin-bottom: 5%">
+                        GitHub
+                    </a>
+                    <a class = "bio link" href="https://www.linkedin.com/in/hannah-p-nguyen/" style="margin-bottom: 5%">
+                        LinkedIn
+                    </a>
+                    <a class = "bio link" href="https://github.com/hnguyennn/Regression-Analysis-on-Diamond-Prices" style="margin-bottom: 5%;">
+                        Resume
+                    </a>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- Right Side-->
+
+        <!-- Projects Box -->
+        <div style="width: 95%; margin-top: 1.5%; margin-left: -10%; margin-bottom: 1.5%; position: relative; background: #BFCBE0; border-radius: 90px; padding: 40px;">
+
+            <div class = "title" style="margin-bottom: 20px;">Projects</div>
+            <div style="width: 100%; height: 0px; margin-top: 20px; position: relative; outline: 4px black solid; outline-offset: -2px"></div>
+            
+            <!-- Projects -->
+
+            <!-- Design of Experiment project -->
+            <div class="projectbox" style="margin-top: 30px;">
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="project" >Impact of Paperclip Positions on Final Distance</div>
+                    <div class="project" style="font-size: 100%;">May 2025 - June 2025</div>
+                </div>
+
+                <div class="subtitle" style="margin: 10px 0;">
+
+                    A factorial experiment testing the effects of paperclip positions on final distance. 
+                    Data collected by myself and report created using R Markdown, along with libraries such as ggplot2 and dplyr.
+
+                </div>
+
+                <div class="subtitle" style="display: flex; align-items: center; gap: 15px;">
+
+                    <a href="https://github.com/hnguyennn/Impact-of-Paperclip-Positions-on-Final-Distance" style="text-decoration: underline; color: blue;">
+                        View on GitHub
+                    </a>
+
+                    <div style="width: 2px; height: 20px; background: black;"></div>
+
+                    <a href="https://github.com/hnguyennn/Impact-of-Paperclip-Positions-on-Final-Distance" style="text-decoration: underline; color: blue;">
+                        View PDF Report
+                    </a>
+
+                </div>
+
+                <div style="width: 100%; height: 2px; background: black; margin-top: 20px;"></div>
+
+            </div>
+
+            <!-- Regression Analysis project -->
+
+            <div class="projectbox" style="margin-top: 30px;">
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="project" >Regression Analysis on Diamond Prices</div>
+                    <div class="project" style="font-size: 100%;">May 2025 - June 2025</div>
+                </div>
+                
+                <div class="subtitle" style="margin: 10px 0;">
+
+                    A project exploring interpretation of and creating regression models, 
+                    as well as performing various statistical analyses on the diamonds dataset.     
+
+                </div>
+
+                <div class="subtitle" style="display: flex; align-items: center; gap: 15px;">
+
+                    <a href="https://github.com/hnguyennn/Regression-Analysis-on-Diamond-Prices" style="text-decoration: underline; color: blue;">
+                        View on GitHub
+                    </a>
+
+                    <div style="width: 2px; height: 20px; background: black;"></div>
+
+                    <a href="https://github.com/hnguyennn/Impact-of-Paperclip-Positions-on-Final-Distance" style="text-decoration: underline; color: blue;">
+                        View PDF Report
+                    </a>
+
+                </div>
+
+                <div style="width: 100%; height: 2px; background: black; margin-top: 20px;"></div>
+
+            </div>
+
+            <!-- Close Price Prediction Model -->
+
+            <div class="projectbox" style="margin-top: 30px;">
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="project" >Close Price Prediction Model</div>
+                    <div class="project" style="font-size: 100%;">October 2024 - Present</div>
+                </div>
+                
+                <div class="subtitle" style="margin: 10px 0;">
+
+                    A project involving cleaning of the datasets and training a learning model to predict California housing 
+                    prices based on various factors. Used pandas and numPy to clean the numerical and categorical values within 
+                    the datasets, as well as Random Forest to perform the predictions.       
+
+                </div>
+
+                <div class="subtitle" style="display: flex; align-items: center; gap: 15px;">
+
+                    <a href="https://github.com/317378769/CA-house-price" style="text-decoration: underline; color: blue;">
+                        View on GitHub
+                    </a>
+
+                </div>
+
+                <div style="width: 100%; height: 2px; background: black; margin-top: 20px;"></div>
+
+            </div>
+
+            <!-- Interactive Calculator -->
+
+            <div class="projectbox" style="margin-top: 30px;">
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="project" >Interactive Calculator</div>
+                    <div class="project" style="font-size: 100%;">August 2024 - Present</div>
+                </div>
+                
+                <div class="subtitle" style="margin: 10px 0;">
+
+                    A calculator that features memory management and various calculations. Built with C++ and Flask. 
+                    This project has two versions, terminal based, which supporst memory management, and web based, which is a 
+                    work in progress.         
+
+                </div>
+
+                <div class="subtitle" style="display: flex; align-items: center; gap: 15px;">
+
+                    <a href="https://github.com/hnguyennn/Calculator" style="text-decoration: underline; color: blue;">
+                        View on GitHub
+                    </a>
+
+                </div>
+
+                <div style="width: 100%; height: 2px; background: black; margin-top: 20px;"></div>
+
+            </div>
+
+
+        </div>
         
-        <div style="left: 83px; top: 112px; position: absolute; color: black; font-size: 48px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Hannah Nguyen</div>
-        <div style="left: 104px; top: 847px; position: absolute; color: black; font-size: 48px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Links</div>
-        <div style="width: 1148px; height: 1417px; left: 535px; top: 56px; position: absolute; background: #BFCBE0; border-radius: 90px"></div>
-        <div style="left: 631px; top: 691px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">View on GitHub</div>
-        <div style="width: 283px; height: 222px; left: 104px; top: 182px; position: absolute; background: #D9D9D9"></div>
-        <div style="left: 90px; top: 928px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">GitHub</div>
-        <div style="left: 90px; top: 1004px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Resume</div>
-        <div style="left: 90px; top: 966px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">LinkedIn</div>
-        <div style="left: 614px; top: 101px; position: absolute; color: black; font-size: 48px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Projects</div>
-        <div style="width: 1015.02px; height: 0px; left: 596.99px; top: 170px; position: absolute; outline: 4px black solid; outline-offset: -2px"></div>
-        <div style="width: 334.01px; height: 0px; left: 79px; top: 172px; position: absolute; outline: 4px black solid; outline-offset: -2px"></div>
-        <div style="width: 280.03px; height: 0px; left: 106.99px; top: 907px; position: absolute; outline: 4px black solid; outline-offset: -2px"></div>
-        <div style="left: 597px; top: 200px; position: absolute; color: black; font-size: 40px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Impact of Paperclip Positions on Final Distance</div>
-        <div style="left: 597px; top: 502px; position: absolute; color: black; font-size: 40px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Regression Analysis on Diamonds Prices</div>
-        <div style="left: 597px; top: 784px; position: absolute; color: black; font-size: 40px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Close Price Prediction Model</div>
-        <div style="left: 597px; top: 1174px; position: absolute; color: black; font-size: 40px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">Interactive Calculator</div>
-        <div style="width: 981px; height: 117px; left: 631px; top: 256px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">A factorial experiment testing the effects of paperclip positions on final distance. Data collected by myself and report created using R Markdown, along with libraries, such as ggplot2 and dplyr.</div>
-        <div style="width: 981px; height: 117px; left: 631px; top: 558px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">A project exploring interpretation of and creating regression models, as well as performing various statistical analyses on the diamonds dataset.</div>
-        <div style="width: 981px; height: 117px; left: 631px; top: 840px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">A project involving cleaning of the datasets and training a learning model to predict California housing prices based on various factors. Used pandas and numPy to clean the numerical and categorical values within the datasets, as well as Random Forest to perform the predictions.</div>
-        <div style="width: 981px; height: 117px; left: 631px; top: 1230px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">A calculator that features memory management and various calculations. Built with C++ and Flask. This project has two versions, terminal based, which supporst memory management, and web based, which is a work in progress.</div>
-        <div style="left: 631px; top: 395px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">View on GitHub</div>
-        <div style="left: 631px; top: 1062px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">View on GitHub</div>
-        <div style="left: 631px; top: 1402px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">View on GitHub</div>
-        <div style="left: 894px; top: 395px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">View PDF Report</div>
-        <div style="left: 893px; top: 689px; position: absolute; color: black; font-size: 32px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">View PDF Report</div>
-        <div style="width: 42px; height: 0px; left: 864px; top: 395px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 2px black solid; outline-offset: -1px"></div>
-        <div style="width: 42px; height: 0px; left: 864px; top: 687px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 2px black solid; outline-offset: -1px"></div>
-        <div style="width: 671.01px; height: 0px; left: 596.99px; top: 472.05px; position: absolute; outline: 2px black solid; outline-offset: -1px"></div>
-        <div style="width: 671.01px; height: 0px; left: 597px; top: 765px; position: absolute; outline: 2px black solid; outline-offset: -1px"></div>
-        <div style="width: 671.01px; height: 0px; left: 597px; top: 1144px; position: absolute; outline: 2px black solid; outline-offset: -1px"></div>
-        <div style="width: 308px; height: 370px; left: 107px; top: 448px; position: absolute; color: black; font-size: 24px; font-family: Inria Sans; font-weight: 400; word-wrap: break-word">I’m a junior at UCSB double majoring in Statistics and Data Science, as well as Applied Math. My interests lie in machine learning, use of AI, and app development. I hope to apply my knowledge from my statistics and math courses towards more real world applications.</div>
     </div>
 </body>
 </html>
